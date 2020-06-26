@@ -11,3 +11,7 @@ export const CONTAINER_WIDTH = {
   lg: '960px',
   xlg: '1200px',
 };
+
+export const font = {
+  fontFamily: "'Lato', 'sans-serif'",
+};

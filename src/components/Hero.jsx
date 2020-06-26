@@ -1,16 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import { CONTAINER_WIDTH } from '../constant/theme';
+import { asRem } from '../helper';
 
-const ImgStyle = styled.img`
-  max-width: ${CONTAINER_WIDTH.sm};
+const HeroImg = styled.img`
+  max-width: ${asRem(520)};
   width: 100%;
+  max-height: ${asRem(300)};
+  height: 100%;
+  text-align: center;
+  border-radius: ${asRem(5)};
 `;
 
 const Hero = () => {
   return (
     <>
-      <ImgStyle src='../../img/hero1.jpg' alt='Hero' />
+      <HeroImg
+        src={`${process.env.PUBLIC_URL}/assets/img/hero.png`}
+        alt='hero'
+      />
     </>
   );
 };

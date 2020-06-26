@@ -1,11 +1,13 @@
 import React from 'react';
 
-function App() {
+import Jobs from './components/Jobs';
+
+const App = () => {
   return (
     <div className='App'>
-      <h1> App</h1>
+      <Jobs />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,44 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
 import { asRem } from '../helper';
-import { CONTAINER_WIDTH } from '../constant/theme';
 
-const Section = styled.div`
+const Nav = styled.nav`
   display: flex;
-  max-width: ${CONTAINER_WIDTH.sm};
-  width: 100%;
   background: #000;
-  height: ${asRem(80)};
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  padding: ${asRem(15)};
 `;
 
 export const ImgStyle = styled.img`
   display: flex;
-  max-width: ${asRem(200)};
-  max-height: ${asRem(40)};
-  width: 100%;
+  max-width: ${asRem(180)};
+  max-height: ${asRem(30)};
+  width: auto;
   height: 100%;
   text-align: center;
 `;
 
 const User = styled.h4`
   color: #fff;
-  margin-left: ${asRem(200)};
+  margin: 0;
+  font-size: ${asRem(18)};
+  font-weight: normal;
 `;
 
-const Navbar = () => {
+const Navbar = ({ user }) => {
+  const fullName = `${user.firstName} ${user.lastName}`;
   return (
-    <>
-      <Section>
-        <ImgStyle
-          src={`${process.env.PUBLIC_URL}/assets/logo.png`}
-          alt='logo'
-        />
-        <User> Jim Rose</User>
-      </Section>
-    </>
+    <Nav>
+      <ImgStyle src={`${process.env.PUBLIC_URL}/assets/logo.png`} alt='logo' />
+      <User> {fullName}</User>
+    </Nav>
   );
 };
 

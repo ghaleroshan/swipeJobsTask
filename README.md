@@ -17,7 +17,9 @@ Run the following commands to setup and run the application, given node andNnpm 
   - Font-awesome for all the icons used in the project
   - Styled components to custumize the css
   - Styled-normalize to normalize the base css
+  - Axios to fetch the data from API
   - MomentJs to format the date to our requirement
+  
 
 ## Deployed on Heroku
 The app has been deployed using Heroku. you can simply go to https://swipejob.herokuapp.com/

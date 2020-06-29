@@ -20,5 +20,5 @@ Run the following commands to setup and run the application, given node andNnpm 
   - MomentJs to format the date to our requirement
 
 ## Deployed on Heroku
-The app has been deployed using Heroku. you can simply go to `https://swipejob.herokuapp.com/`.
+The app has been deployed using Heroku. you can simply go to https://swipejob.herokuapp.com/
 
